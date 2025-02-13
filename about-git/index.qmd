@@ -24,7 +24,11 @@ Bila diputuskan untuk untuk masuk ke repository utama, maka proses push diinisia
 
 Mengingat pentingnya mengkombinasi personalisasi kontribusi (git) dan kolaborasi (Github) maka dipandang perlu akadmisi memanfaatkan alat bantu ini. Untuk itu tulisan ini dibuat.
 
-Proses pembuatan tulisan ini menggunakan Git dan sedikit Github. Tulisan ini dibuat menggunakan texteditor, dengan format markdwon versi Quarto
+Proses pembuatan tulisan ini menggunakan Git dan sedikit Github. Tulisan ini dibuat menggunakan texteditor, dengan format markdwon versi Quarto. 
+This is a book created from markdown and executable code.
+
+
+See @knuth84 for additional discussion of literate programming.
 
 Bandung, 13 Februari 2025
 Armein Z R Langi  
