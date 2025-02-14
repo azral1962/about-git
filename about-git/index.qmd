@@ -1,4 +1,16 @@
-# Preface {.unnumbered}
+# Pendahuluan {.unnumbered}
+
+## File, Directory, Repository, Vault
+
+Di dunia digital kita menghasilkan FILE, yang berisikan entah data biner atau data teks (text). Data teks sebenarnta juga data biner, tetapi dibatasio oleg kode teks seperti ASCII atau UTF-8. Fiile data biner dan teks untuk dibaca mesin, sedangkan data teks biasanya untuk di baca juga oleh manUsia.
+
+Proses yang kita lakukan pada level paling dasar adalah mengubah file input menjadi file output. Atau file versi lama menjadi file versi baru. Sedemikian penting file itu śehingga kita menyimpanya ke dalam sebuah repositori atay "lebari besi" vault. Hampir selalu ada lebih dari satu files, sehinnga kita membri nama atau label pada file itu. Nama file adalah data teks, sehungga bisa dibaca manusia. Nama juga digunakan sebagi entry daro daftar isu (directoy. Sebuah directiory berisikan pohon dari folfers (Map), dan sebuah fiolder berisikan folder lain atu file.
+
+\## Github: Bank Repositori
+
+Seperti uang yang lebih aman dan berguna disimpan, repository kiat bisa direpliksi di Github, dimana isi repository lokal sama dengan repository naster g=di Guthub. Dalam kondisi yang tidak kita harpkan, komputer kita rysa atau hilabg, kita bisa dsenfab nudah mereplikasi repository kiat di komputrer ayng baru, dengan mrngclone reoisutir ynag d=tersu=imaon di Bnak GIthub
+
+## Git GithuB dan KNowlegdde nanagemen
 
 Dalam berkreasi menghasilkan tulisan, paper, disertasi, konten, software kita sering menghadapi kebingungan, kelelahan, dan kebuntuan akibat sifat kompleksitas yang tinggi.
 
@@ -10,25 +22,41 @@ Git dan Github alat digital yang sangat berguna untuk mengelola berbagai potonga
 
 Git mengendalikan pnguraian pekerjaan ke dalam potongan-potongan penugasan, mencatat siapa yang mengambil potongan pekerjaan tertentu, lalu memantau penyelesaiainya. Pekerjaan juga dapat diurai ke dalam versi-versi, sehingga sebelum pengembangan versi baru selesai versi lama tetap tersedia.
 
-Git mengenal tiga tempat penyimpanan: lokal repository, staging, dan working space. 
+Git mengenal tiga tempat penyimpanan: lokal repository, staging, dan working space.
 
 Adapun Github menjadi pusat distribusi, sehingga Github menyimpan repositori utama (master atau main) dan setiap individu kontributor memiliki replikasi dari repositori master, yaitu replikasi lokal.
- 
+
 Sebagaimana diperlihatkan pada Gambar @fig-git-github, Github menjdi pusat dari banyak kontributor dengan repositori lokal masing masing. Git dan Github bekerjasama mengatur potongan mana yang dikerjakan kontributor tertentu, dan mencegah tumpang tindih atau pengerjaan bagian sama pada saat yang sama oleh kntributor yang berbeda.
 
 ![Git dan Github](images/gitgithub.png){#fig-git-github}
 
-Dari gambar ini, dapat dimengerti bahwa kontributor bekerja di working space, yang bila hasinya memuaskan, di kirim ke staging area (yang biasanya hidden dari kontrbutor ) untuk menunggu keputusan apakah hendak di commit  ke local repository. Untuk proyek personal, proses berhenti cukup di sini
+Dari gambar ini, dapat dimengerti bahwa kontributor bekerja di working space, yang bila hasinya memuaskan, di kirim ke staging area (yang biasanya hidden dari kontrbutor ) untuk menunggu keputusan apakah hendak di commit ke local repository. Untuk proyek personal, proses berhenti cukup di sini
 
 Bila diputuskan untuk untuk masuk ke repository utama, maka proses push diinisiasi, yang biasanya diterima kecuali bisa ada anomali seperti duplikasi kntributor tadi.
 
 Mengingat pentingnya mengkombinasi personalisasi kontribusi (git) dan kolaborasi (Github) maka dipandang perlu akadmisi memanfaatkan alat bantu ini. Untuk itu tulisan ini dibuat.
 
-Proses pembuatan tulisan ini menggunakan Git dan sedikit Github. Tulisan ini dibuat menggunakan texteditor, dengan format markdwon versi Quarto. 
-This is a book created from markdown and executable code.
+Proses pembuatan tulisan ini menggunakan Git dan sedikit Github. Tulisan ini dibuat menggunakan texteditor, dengan format markdwon versi Quarto. This is a book created from markdown and executable code.
 
+## Tejks, Markdown, Quarto
+
+pada akhirnya isi file harus di jonsumsi pengguna. Ada 3 bentuk pernyajian yang umumnya dituntut orang: web pages (untuk dikonsumsi di komputer, PDF (untuk dibagikan dan dikonsmunsi melalui layar atau printer), atau docx untuk diedit swlanjutnya nenggunakan word processor
+
+Drngan menmbahkan kode-kode matking pasda file .Txt, dokumen berubah menh=jai .md.\
+kendian bila ditambahjsn atribut yaml, maka foile berubah mnjadi .qmd yabg dunakan Quarto.
+
+Tugas utama Quarto adalah merender file teks markdown .qmd menjsdi pageweb, pdf, docs, serta format lainya seperti latex
+
+# obsidian dan Zotero, dan Quarto
+
+Onsidian adalh aplikasi serta paltfoem untuk menghasilak file yang bernialai tinggi. Dalam bentuk paling sederhana kita daoa memilih seatu fold dalam repository untuk di jadikam vaukt (ruang penyimpn harta). Sekali vaultr itu dibuat, obisidian bsai membuat file .md unrtuk membuta f\]konten, seklain itu, file tersebut dapat mengndung btabwk,gambar, persamaan matematika sehingga dapa digunkan untuk menimpan pengethuan yang berharga/
+
+Kualitas file .md dapat ditingkatkan karena Qbisidan memiliki mekaniskme untuk membuat ,ind map (graph yang menbghubungkan isi suatu file dengan isi file lain), sehingga penulis mendapatkan ganmabran relasional yang lebih lengkao.
+
+Dengan sebuah ekstensi (program tambahan) di Obsidian, Obsidian mampu melakukan hal yang sama pad dfile .qmd. File qmd dsaoat mnenggabung kan potongan pengetahuan untk manusia dasn potongna kode software yang daopat dieksekusikomputer dan menayangkan hasdilnya. Quarto merealisasikan konsep literate programming, yang menjadikan penulisan oaoper dan koding dilakuan bersamaabn
 
 See @knuth84 for additional discussion of literate programming.
 
 Bandung, 13 Februari 2025
-Armein Z R Langi  
+
+\>Armein Z R Langi
