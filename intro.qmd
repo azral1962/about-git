@@ -1,0 +1,93 @@
+
+# Git dan Github
+
+
+### 📌 **Konsep Dasar Git**  
+**Git** adalah sistem kontrol versi (VCS) terdistribusi yang digunakan untuk melacak perubahan dalam kode, memungkinkan kolaborasi, dan mengelola proyek perangkat lunak dengan lebih efisien.
+
+---
+
+## 🔹 **1. Apa Itu Git?**
+Git adalah alat yang memungkinkan:
+- **Versi Kontrol**: Melacak perubahan kode dari waktu ke waktu.
+- **Kolaborasi**: Memungkinkan banyak orang bekerja di proyek yang sama tanpa konflik.
+- **Distribusi**: Setiap pengembang memiliki salinan lengkap dari repositori.
+
+---
+
+## 🔹 **2. Arsitektur & Cara Kerja Git**
+Git memiliki tiga area utama:  
+
+| **Area** | **Fungsi** |
+|----------|------------|
+| **Working Directory** | Tempat di mana file saat ini diedit. |
+| **Staging Area** | Area persiapan sebelum file dikomit. |
+| **Repository (Local Repo)** | Tempat penyimpanan perubahan yang telah dikomit. |
+| **Remote Repository** | Repositori yang disimpan di server (GitHub, GitLab, dll.). |
+
+⚡ **Alur Kerja Git:**
+1. **Edit File** → di **Working Directory**.
+2. **Tambah ke Staging Area** → `git add file.txt`
+3. **Commit ke Repository** → `git commit -m "Pesan commit"`
+4. **Push ke Remote Repo** → `git push origin main`
+
+---
+
+## 🔹 **3. Perintah Dasar Git**
+| Perintah | Fungsi |
+|----------|--------|
+| `git init` | Membuat repositori Git baru. |
+| `git clone URL` | Mengunduh repositori dari remote. |
+| `git add file.txt` | Menambahkan file ke staging area. |
+| `git commit -m "Pesan"` | Menyimpan perubahan ke repositori lokal. |
+| `git push origin main` | Mengunggah perubahan ke repositori remote. |
+| `git pull origin main` | Mengambil perubahan terbaru dari remote. |
+| `git status` | Melihat status perubahan file. |
+| `git log` | Melihat riwayat commit. |
+| `git branch feature-X` | Membuat branch baru. |
+| `git checkout feature-X` | Berpindah ke branch lain. |
+| `git merge feature-X` | Menggabungkan branch ke branch utama. |
+
+---
+
+## 🔹 **4. Branching & Merging**
+Git memungkinkan pengembang bekerja di fitur yang berbeda tanpa mengganggu kode utama.
+
+1. **Membuat branch baru** → `git branch feature-1`
+2. **Beralih ke branch** → `git checkout feature-1`
+3. **Edit & commit perubahan** → `git commit -m "Tambah fitur"`
+4. **Kembali ke branch utama** → `git checkout main`
+5. **Gabungkan branch** → `git merge feature-1`
+
+**🔀 Git Flow Umum:**
+- **`main`** → Branch stabil (production).
+- **`develop`** → Branch pengembangan utama.
+- **Feature Branches** → Untuk fitur baru, lalu digabungkan ke `develop`.
+
+---
+
+## 🔹 **5. Remote Repository (GitHub, GitLab, Bitbucket)**
+Git dapat terhubung ke layanan cloud seperti **GitHub** untuk kolaborasi.
+
+1. **Tambahkan Remote Repo**:  
+   ```
+   git remote add origin https://github.com/user/repo.git
+   ```
+2. **Push kode ke GitHub**:  
+   ```
+   git push -u origin main
+   ```
+3. **Ambil perubahan dari GitHub**:  
+   ```
+   git pull origin main
+   ```
+
+---
+
+## 🎯 **Kesimpulan**
+- **Git membantu dalam pengelolaan kode secara terstruktur.**
+- **Memungkinkan banyak pengembang bekerja di proyek yang sama.**
+- **Branching mempermudah pengembangan fitur tanpa mengganggu kode utama.**
+- **Remote repository (seperti GitHub) membuat kolaborasi lebih mudah.**
+
+➡ **Ada bagian yang ingin kamu eksplor lebih dalam?** 🚀

@@ -1,0 +1,177 @@
+# Contoh Praktis
+
+
+### 📌 **Contoh Realistis Proyek Pembuatan Software di Linux dengan Git**
+Kita akan membuat proyek software sederhana bernama **"MyApp"**, sebuah program CLI yang ditulis dalam **Python**. Proyek ini akan menggunakan **Git** untuk mengelola versi dan berkolaborasi.  
+
+---
+
+## 🔹 **1. Inisialisasi Proyek**
+### 🔥 **Langkah 1: Buat Direktori Proyek**
+Di terminal Linux, jalankan:
+```bash
+mkdir MyApp
+cd MyApp
+```
+
+### 🔥 **Langkah 2: Inisialisasi Git**
+```bash
+git init
+```
+📌 **Git akan membuat repositori kosong di dalam folder proyek.**
+
+---
+
+## 🔹 **2. Menambahkan File Awal**
+### 🔥 **Langkah 3: Buat File Program Utama**
+Buat file `app.py`:
+```bash
+touch app.py
+```
+Edit `app.py`:
+```python
+print("Hello, this is MyApp!")
+```
+
+### 🔥 **Langkah 4: Tambahkan README**
+```bash
+echo "# MyApp" > README.md
+```
+
+### 🔥 **Langkah 5: Tambahkan File ke Git**
+```bash
+git add app.py README.md
+```
+📌 **Perintah `git add` menambahkan file ke Staging Area.**  
+
+### 🔥 **Langkah 6: Commit Perubahan**
+```bash
+git commit -m "Inisialisasi proyek dengan file utama dan README"
+```
+📌 **Perintah `git commit` menyimpan perubahan ke dalam riwayat versi.**  
+
+---
+
+## 🔹 **3. Menambahkan Remote Repository (GitHub)**
+Sekarang, kita ingin menyimpan proyek ini di GitHub.
+
+### 🔥 **Langkah 7: Tambahkan Remote Repository**
+```bash
+git remote add origin https://github.com/username/MyApp.git
+```
+📌 **Gantilah `username` dengan akun GitHub kamu.**  
+
+### 🔥 **Langkah 8: Push Kode ke GitHub**
+```bash
+git push -u origin main
+```
+📌 **Kode pertama kali diunggah ke GitHub pada branch `main`.**  
+
+---
+
+## 🔹 **4. Pengembangan Fitur Baru dengan Branch**
+Misalnya, kita ingin menambahkan fitur baru: **menampilkan waktu saat ini**.
+
+### 🔥 **Langkah 9: Buat dan Beralih ke Branch Baru**
+```bash
+git branch feature-time
+git checkout feature-time
+```
+📌 **Branch `feature-time` dibuat untuk pengembangan fitur tanpa mengganggu branch utama.**  
+
+### 🔥 **Langkah 10: Edit `app.py` untuk Menampilkan Waktu**
+Edit `app.py`:
+```python
+import datetime
+
+print("Hello, this is MyApp!")
+print("Current Time:", datetime.datetime.now())
+```
+
+### 🔥 **Langkah 11: Commit Perubahan di Branch Fitur**
+```bash
+git add app.py
+git commit -m "Menambahkan fitur waktu ke MyApp"
+```
+
+---
+
+## 🔹 **5. Menggabungkan Fitur ke `main`**
+Setelah fitur selesai diuji, kita gabungkan ke branch `main`.
+
+### 🔥 **Langkah 12: Pindah ke Branch `main`**
+```bash
+git checkout main
+```
+
+### 🔥 **Langkah 13: Gabungkan Fitur**
+```bash
+git merge feature-time
+```
+📌 **Branch `feature-time` digabungkan ke `main`.**  
+
+### 🔥 **Langkah 14: Push Perubahan ke GitHub**
+```bash
+git push origin main
+```
+📌 **Kode terbaru sekarang ada di GitHub.**  
+
+---
+
+## 🔹 **6. Bekerja dengan Tim (Pull Request dan Merge)**
+Jika bekerja dalam tim, biasanya:
+1. **Developer lain membuat branch fitur baru dan push ke GitHub**:
+   ```bash
+   git push origin feature-time
+   ```
+2. **Di GitHub, developer membuat Pull Request** dan meminta merge ke `main`.
+3. **Tim melakukan review kode** dan menyetujui merge.
+4. **Merge dilakukan di GitHub atau melalui terminal:**
+   ```bash
+   git checkout main
+   git pull origin main
+   ```
+
+---
+
+## 🔹 **7. Mengelola Bug dan Revisi**
+Misalnya, kita menemukan bug di `app.py`.
+
+### 🔥 **Langkah 15: Buat Branch untuk Perbaikan Bug**
+```bash
+git branch fix-bug
+git checkout fix-bug
+```
+
+Edit `app.py` untuk memperbaiki bug, lalu:
+```bash
+git add app.py
+git commit -m "Memperbaiki bug dalam fitur waktu"
+git checkout main
+git merge fix-bug
+git push origin main
+```
+
+---
+
+## 🔹 **8. Membuat Versi Rilis**
+Setelah pengembangan stabil, kita bisa membuat **versi rilis**.
+
+### 🔥 **Langkah 16: Buat Tag untuk Rilis**
+```bash
+git tag -a v1.0 -m "Rilis pertama MyApp"
+git push origin v1.0
+```
+📌 **Git akan menandai versi `v1.0` untuk rilis.**  
+
+---
+
+## 🎯 **Kesimpulan**
+1. **Gunakan Git untuk mengelola proyek dengan aman.**  
+2. **Gunakan branch untuk pengembangan fitur dan perbaikan bug.**  
+3. **Simpan proyek di GitHub untuk kolaborasi dan backup.**  
+4. **Gunakan tagging (`git tag`) untuk merilis versi stabil.**  
+
+➡ **Mau coba proyek lain atau ada pertanyaan?** 🚀# Summary
+
+In summary, this book has no content whatsoever.

@@ -1,0 +1,28 @@
+project:
+  type: book
+
+book:
+  title: "Panduan Sederhana Setting-Up Knowledge Managemnt Sytems"
+  subtitle: "Git, Github, Quarto, Obsidian, dan Zotero"
+  author: "Armein Z R Langi"
+  date: "2/13/2025"
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - summary.qmd
+    - references.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+  pdf:
+    documentclass: scrreprt
+    papersize: a5
+  docx:
+    reference-doc: UTT-Books-17.docx
+
+
+
+
