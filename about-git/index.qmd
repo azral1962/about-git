@@ -1,6 +1,6 @@
 # Preface {.unnumbered}
 
-Dalam berkreasi menghasilkan tulisan, paper, disertasi, konten, software kita sering menghadapi kebingungan, kelelahan, dan kebuntuan akibat sifat kompleksitas yang tinggi.
+Di dunia digital, asset terbesar adalah FILE. File adalah *container* dari bit data. Kita bekerja untuk nilai vi tersebut. dariDalam berkreasi menghasilkan tulisan, paper, disertasi, konten, software kita sering menghadapi kebingungan, kelelahan, dan kebuntuan akibat sifat kompleksitas yang tinggi.
 
 Berbagai alat bantu digital telah sangat menolong, tetapi ancaman kompleksitas selalu mengancam. Akibatnya kalaupun tugas ini selesai, kualitas tidak maksimal, waktu terlalu lama, dan biaya yang dikeluarkan membengkak.
 
